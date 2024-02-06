@@ -1,1 +1,1 @@
-# made a basic UI of todo app till now more features will be added soon
+# made a basic UI of todo app till now. More features will be added soon
