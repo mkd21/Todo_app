@@ -1,1 +1,2 @@
-# made a basic UI of todo app till now. More features will be added soon
+# made a basic UI of todo app till now. More features will be added soon <br>
+# Added initial event listeners
