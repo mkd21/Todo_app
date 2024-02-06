@@ -1,0 +1,72 @@
+html
+{
+    box-sizing: border-box;
+}
+
+:root 
+{
+    --parent_Div: #ede1d3;
+    --input_Area: rgb(168, 168, 6);
+    --pastel_magenta : #F49AC2;
+    --Banana_Yellow: #E2C72F;
+    --Cold_Turkey: #897B7B;
+    --Burning_Sand: #D89275;
+}
+* , *::before , *::after
+{
+    box-sizing: inherit;
+}
+
+/* .area_bgcol
+{
+    background-color: var(--parent_Div);
+} */
+
+/* .inparea_bg_col
+{
+    background-color: var(--input_Area);
+} */
+
+.input_area
+{
+    gap: 1.4rem;
+    margin-top:23px;
+}
+
+                /* task assigning area */
+
+.parent_taskAssign_Area
+{
+    /* background-color: darkgoldenrod; */
+    margin-top: 69px;
+}
+.task_heading > div 
+{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.task_number
+{
+    flex-basis: 10%;
+    /* background-color: var(--pastel_magenta); */
+}
+.actual_task
+{
+    flex-basis: 50%;
+    /* background-color: var(--Banana_Yellow); */
+}
+.status_task
+{
+    flex-basis: 15%;
+    /* background-color: var(--Burning_Sand); */
+}
+.action_task
+{
+    flex-basis:25%;
+    /* background-color: var(--Cold_Turkey); */
+}
+
+.task_control_area > div 
+{
+    font-weight: bold;
+}
