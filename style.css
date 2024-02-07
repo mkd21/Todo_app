@@ -45,6 +45,7 @@ html
     font-weight: bold;
     font-size: 1.2rem;
 }
+
 .task_number
 {
     flex-basis: 10%;
@@ -63,6 +64,7 @@ html
 .action_task
 {
     flex-basis:25%;
+    gap:9px;
     /* background-color: var(--Cold_Turkey); */
 }
 

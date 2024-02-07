@@ -11,6 +11,7 @@
 
 </head>
 <body>
+
         <!-- /////////////////////////////////////////// -->
 
         <div class="parent container  area_bgcol">
@@ -41,7 +42,7 @@
 
                 <!-- task assigning area  -->
 
-                <div class="parent_taskAssign_Area">
+                <div id ="taskParent" class = "parent_taskAssign_Area">
 
                     <div class="task_heading d-flex">
 
@@ -56,22 +57,25 @@
 
                     <!-- ACTUAL TASK  -->
 
-                    <div class=" row task_control_area d-flex">
+                    <div class="row" >
 
-                        <div class="task_number">1.</div>
-                        <div class="actual_task">Buy Groceries for next week</div>
-                        <div class="status_task">In progress</div>
+                        <div class=" row task_control_area d-flex">
 
-                        <div class="action_task">
-                            <button class="btn btn-danger">DELETE</button>
-                            <button class="btn btn-success">FINISHED</button>
+                            <div class="task_number">1.</div>
+                            <div class="actual_task">Buy Groceries for next week</div>
+                            <div class="status_task">In progress</div>
+    
+                            <div class="action_task d-flex justify-content-start">
+                                <button class="btn btn-danger">DELETE</button>
+                                <button class="btn btn-success">FINISHED</button>
+                            </div>
+    
                         </div>
-
                     </div>
-
+                    
                     <hr>
 
-                    <div class=" row task_control_area d-flex">
+                    <!-- <div class=" row task_control_area d-flex">
 
                         <div class="task_number">2.</div>
                         <div class="actual_task">Renew Car Insurance</div>
@@ -84,7 +88,7 @@
 
                     </div>
 
-                    <hr>
+                    <hr> -->
 
                     <!-- <div class=" row task_control_area d-flex">
 
