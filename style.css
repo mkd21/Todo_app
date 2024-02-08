@@ -72,3 +72,8 @@ html
 {
     font-weight: bold;
 }
+
+.task_control_area
+{
+    margin-bottom: 12px;
+}

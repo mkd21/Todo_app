@@ -2,7 +2,45 @@
 
 let parentoftasks = document.getElementById("taskParent");
 
-function addTodo(todo_data)
+let saveButton = document.getElementById("save_btn");
+let input_bar = document.getElementById("input_bar");
+
+let count = [];
+
+input_bar.addEventListener("keyup" , function toggleSaveBtn(){
+
+    let input_data = input_bar.value;
+    if(input_data.length == 0)
+    {
+        if(saveButton.classList.contains("disabled"))
+        {
+            return;
+        }
+        saveButton.classList.add("disabled");
+    }
+    else
+    {
+        saveButton.classList.remove("disabled");
+    }
+});
+
+saveButton.addEventListener("click" , function exec(){
+    let input_Data = input_bar.value;
+    
+    if(input_Data.length == 0)
+    {
+        return;
+    }
+
+    count.push(input_Data);     // pushing in array to maintain the length of the index
+    addTodo(input_Data , count);
+
+    input_bar.value = "";
+
+    saveButton.classList.add("disabled");
+});
+
+function addTodo(todo_data , count)
 {
     let rowDiv = document.createElement("div");
     let task_control_area = document.createElement("div");
@@ -22,7 +60,7 @@ function addTodo(todo_data)
             // ADDING CLASSES 
 
     rowDiv.classList.add("row");
-    task_control_area.classList.add("row" ,"task_control_area", "d-flex" , "align-items-center" , "justify-content-center");
+    task_control_area.classList.add("row" ,"task_control_area", "d-flex");
     task_number.classList.add("task_number");
     actual_task.classList.add("actual_task");
     status_task.classList.add("status_task");
@@ -33,8 +71,8 @@ function addTodo(todo_data)
 
         // ADDING THE ACTUAL CONTENT 
 
-    task_number.textContent = "1";
-    actual_task.textContent = todo_data;     // sets the to do text after putting information 
+    task_number.textContent = `${count.length}`;  // maintains the serial number
+    actual_task.textContent = todo_data;            // sets the to do text after putting information 
     status_task.textContent = "In Progress";
     deleteBtn.textContent = "DELETE";
     finishedBtn.textContent = "FINISHED";
