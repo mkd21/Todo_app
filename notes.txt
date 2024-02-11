@@ -1,0 +1,28 @@
+delete button is working but the order is not coming as expected to do that we need to re render the whole row 
+
+
+now the arrangemnt related problem is solved
+
+
+trying to figure out how to delete a particular element from array 
+
+got something called  setAttribute() method and getAttribute() method 
+
+
+delete btn ke saath koi attribute add kr krhe hai ki track kr ske ki konsa btn click hua aur konsa todo task ko delete krna hai
+
+
+
+getAttribute( attribute name  )  se attribute check kr skte hai ki konsa attribute hai uska value kya hai and all
+
+
+
+
+setAttribute( kuch bhi naam dedo , attribute set kro  )
+
+
+
+
+splice(arg1 , arg2) method ka knowledge
+
+it takes 2 arguement --->  1st is index and 2nd is how many elements to delete from that specific index 
