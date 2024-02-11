@@ -50,6 +50,8 @@ function deleteTodo(event)
 
     let specificBtnIndex = Number(btnTodelete.getAttribute("todo_index"));
 
+    console.log(typeof specificBtnIndex);  // default is String so we changed it to number
+
     countArr.splice(specificBtnIndex - 1 , 1);
 
     todo_data_new.innerHTML = "";
