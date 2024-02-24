@@ -26,3 +26,13 @@ setAttribute( kuch bhi naam dedo , attribute set kro  )
 splice(arg1 , arg2) method ka knowledge
 
 it takes 2 arguement --->  1st is index and 2nd is how many elements to delete from that specific index 
+
+
+
+
+                //   for progress button
+
+
+instread of pushing only tasks inside the array in the form of string we are creating object for each task and then pushing it inside an array 
+
+this will help in changing the status of the todo task 
